@@ -19,4 +19,4 @@ Solutions Page – Overview of Quiklrn’s solutions
 
 Login Page – User authentication (basic UI)
 
-🌐 Live Demo: [Click Here](https://vishnu-86394.github.io/AI-THON/)
+🌐 Live Demo: [Click Here](https://vishnu-86394.github./AI-THON/)
