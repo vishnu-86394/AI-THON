@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Learner - Quiklrn</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f9f9f9;
+      color: #333;
+    }
+
+    /* Navbar */
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 40px;
+      background: #4a148c;
+      color: white;
+    }
+    .navbar .logo {
+      font-size: 28px;
+      font-weight: bold;
+    }
+    .navbar .logo span {
+      color: #6c63ff; /* purple */
+    }
+    .navbar .logo strong {
+      color: orange;
+    }
+    .navbar ul {
+      list-style: none;
+      display: flex;
+      margin: 0;
+      padding: 0;
+    }
+    .navbar ul li {
+      margin-left: 20px;
+    }
+    .navbar ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    /* Hero Section */
+    .hero {
+      background: url('https://img.freepik.com/free-photo/students-using-digital-tablet_23-2147666522.jpg') no-repeat center center/cover;
+      height: 50vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: white;
+      position: relative;
+    }
+    .hero::after {
+      content: "";
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(0, 0, 0, 0.4);
+    }
+    .hero-content {
+      position: relative;
+      z-index: 2;
+    }
+    .hero h1 {
+      font-size: 48px;
+    }
+
+    /* Learner Features Section */
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 50px 80px;
+    }
+    .card {
+      background: white;
+      padding: 25px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      text-align: center;
+      transition: 0.3s;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+    }
+    .card h3 {
+      color: #6c63ff;
+    }
+    .card p {
+      font-size: 15px;
+    }
+
+    /* CTA Section */
+    .cta {
+      text-align: center;
+      padding: 50px;
+      background: #6c63ff;
+      color: white;
+    }
+    .cta button {
+      padding: 12px 25px;
+      font-size: 16px;
+      background: orange;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      color: white;
+      font-weight: bold;
+    }
+    .cta button:hover {
+      background: darkorange;
+    }
+
+    /* Footer */
+    footer {
+      background: #333;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <div class="navbar">
+    <div class="logo"><span>Qui</span><strong>klrn</strong></div>
+    <ul>
+      <li><a href="Home.html">HOME</a></li>
+      <li><a href="institute.html">INSTITUTES</a></li>
+      <li><a href="enterprice.html">ENTERPRISE</a></li>
+      <li><a href="content.html">CONTENT PARTNERS</a></li>
+      <li><a href="learner.html">LEARNER</a></li>
+      
+      <li><a href="resources.html">RESOURCES</a></li>
+      <li><a href="login.html">LOGIN</a></li>
+    </ul>
+  </div>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Learner Dashboard</h1>
+      <p>Personalized learning for every student</p>
+    </div>
+  </section>
+
+  <!-- Features -->
+  <section class="features">
+    <div class="card">
+      <h3>📚 Personalized Learning</h3>
+      <p>Get content recommendations tailored to your skill level and pace.</p>
+    </div>
+    <div class="card">
+      <h3>📊 Progress Tracking</h3>
+      <p>Track your learning journey with real-time analytics and reports.</p>
+    </div>
+    <div class="card">
+      <h3>📝 Assessments & Quizzes</h3>
+      <p>Practice with quizzes, assignments, and mock tests for better results.</p>
+    </div>
+    <div class="card">
+      <h3>📱 Learn Anywhere</h3>
+      <p>Access lessons from your laptop, tablet, or mobile – anytime, anywhere.</p>
+    </div>
+  </section>
+
+  <!-- Call to Action -->
+  <section class="cta">
+    <h2>Start Your Learning Journey Today!</h2>
+    <p>Sign up now and experience adaptive learning.</p>
+    <button>Get Started</button>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Quiklrn. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>

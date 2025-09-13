@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resources - Quiklrn</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f9f9f9;
+      color: #333;
+    }
+
+    /* Navbar */
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 40px;
+      background: #4a148c;
+      color: white;
+    }
+    .navbar .logo {
+      font-size: 28px;
+      font-weight: bold;
+    }
+    .navbar .logo span {
+      color: #6c63ff;
+    }
+    .navbar .logo strong {
+      color: orange;
+    }
+    .navbar ul {
+      list-style: none;
+      display: flex;
+      margin: 0;
+      padding: 0;
+    }
+    .navbar ul li {
+      margin-left: 20px;
+    }
+    .navbar ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    /* Hero Section */
+    .hero {
+      background: url('https://img.freepik.com/free-photo/library-with-books_1203-1664.jpg') no-repeat center center/cover;
+      height: 45vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: white;
+      position: relative;
+    }
+    .hero::after {
+      content: "";
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(0, 0, 0, 0.5);
+    }
+    .hero-content {
+      position: relative;
+      z-index: 2;
+    }
+    .hero h1 {
+      font-size: 48px;
+      margin: 0;
+    }
+    .hero p {
+      margin-top: 10px;
+      font-size: 18px;
+    }
+
+    /* Resource Cards */
+    .resources {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 50px 80px;
+    }
+    .card {
+      background: white;
+      padding: 25px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      text-align: center;
+      transition: 0.3s;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+    }
+    .card h3 {
+      color: #6c63ff;
+    }
+    .card p {
+      font-size: 15px;
+    }
+    .card a {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 10px 20px;
+      background: orange;
+      color: white;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: bold;
+    }
+    .card a:hover {
+      background: darkorange;
+    }
+
+    /* CTA Section */
+    .cta {
+      text-align: center;
+      padding: 50px;
+      background: #6c63ff;
+      color: white;
+    }
+    .cta button {
+      padding: 12px 25px;
+      font-size: 16px;
+      background: orange;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      color: white;
+      font-weight: bold;
+    }
+    .cta button:hover {
+      background: darkorange;
+    }
+
+    /* Footer */
+    footer {
+      background: #333;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <div class="navbar">
+    <div class="logo"><span>Qui</span><strong>klrn</strong></div>
+    <ul>
+      <li><a href="Home.html">HOME</a></li>
+      <li><a href="institute.html">INSTITUTES</a></li>
+      <li><a href="enterprice.html">ENTERPRISE</a></li>
+      <li><a href="content.html">CONTENT PARTNERS</a></li>
+      <li><a href="learner.html">LEARNER</a></li>
+      
+      <li><a href="resources.html">RESOURCES</a></li>
+      <li><a href="login.html">LOGIN</a></li>
+    </ul>
+  </div>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Resources</h1>
+      <p>Explore learning materials, guides, and tools</p>
+    </div>
+  </section>
+
+  <!-- Resource Cards -->
+  <section class="resources">
+    <div class="card">
+      <h3>📘 E-books</h3>
+      <p>Download free e-books on trending subjects and technologies.</p>
+      <a href="#">View</a>
+    </div>
+    <div class="card">
+      <h3>🎥 Video Tutorials</h3>
+      <p>Learn from video-based tutorials by experts.</p>
+      <a href="#">Watch</a>
+    </div>
+    <div class="card">
+      <h3>📝 Study Guides</h3>
+      <p>Access step-by-step guides for better understanding.</p>
+      <a href="#">Read</a>
+    </div>
+    <div class="card">
+      <h3>💻 Practice Tests</h3>
+      <p>Boost your knowledge with interactive quizzes and practice tests.</p>
+      <a href="#">Try Now</a>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta">
+    <h2>Get the Best Out of Our Resources</h2>
+    <p>Enhance your skills with our curated materials.</p>
+    <button>Start Learning</button>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Quiklrn | Resources. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>

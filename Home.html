@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiklrn - Adaptive Learning Platform</title>
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    /* Top contact bar */
+    .top-bar {
+      background: #555;
+      color: white;
+      font-size: 14px;
+      padding: 8px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .top-bar a {
+      color: white;
+      text-decoration: none;
+      margin-left: 10px;
+    }
+
+    /* Navbar */
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 40px;
+      background: rgba(0, 0, 0, 0.6);
+      position: absolute;
+      width: 100%;
+      top: 0;
+      z-index: 1000;
+    }
+    .navbar .logo {
+      font-size: 28px;
+      font-weight: bold;
+    }
+    .navbar .logo span {
+      color: #6c63ff; /* Purple for Quik */
+    }
+    .navbar .logo strong {
+      color: orange; /* Orange for lrn */
+    }
+    .navbar ul {
+      list-style: none;
+      display: flex;
+      margin: 0;
+      padding: 0;
+    }
+    .navbar ul li {
+      margin-left: 20px;
+    }
+    .navbar ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+    }
+    .navbar ul li a:hover {
+      text-decoration: underline;
+    }
+
+    /* Hero Section */
+    .hero {
+      background: url('https://t3.ftcdn.net/jpg/02/13/59/40/360_F_213594025_gAzvAKRuB2uYrfBc88HhwSZBb1M4eWWA.jpg') no-repeat center center/cover;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: white;
+      position: relative;
+    }
+    .hero::after {
+      content: "";
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(0, 0, 0, 0.4);
+    }
+    .hero-content {
+      position: relative;
+      z-index: 2;
+    }
+    .hero h1 {
+      font-size: 50px;
+      margin-bottom: 20px;
+    }
+    .buttons {
+      margin-top: 20px;
+    }
+    .btn {
+      padding: 12px 25px;
+      margin: 0 10px;
+      border: none;
+      cursor: pointer;
+      font-size: 16px;
+      font-weight: bold;
+      border-radius: 5px;
+    }
+    .btn-purple {
+      background: #7e57c2;
+      color: white;
+    }
+    .btn-orange {
+      background: #ffb300;
+      color: white;
+    }
+    .btn:hover {
+      opacity: 0.9;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top Bar -->
+  <div class="top-bar">
+    <span>📧 Contact Us</span>
+    <span>
+      <a href="#">Facebook</a>
+      <a href="#">YouTube</a>
+      <a href="#">Play Store</a>
+      <a href="#">Windows</a>
+    </span>
+  </div>
+
+  <!-- Navbar -->
+  <div class="navbar">
+    <div class="logo"><span>Qui</span><strong>klrn</strong></div>
+    <ul>
+      <li><a href="Home.html">HOME</a></li>
+      <li><a href="institute.html">INSTITUTES</a></li>
+      <li><a href="enterprice.html">ENTERPRISE</a></li>
+      <li><a href="content.html">CONTENT PARTNERS</a></li>
+      <li><a href="learner.html">LEARNER</a></li>
+      <li><a href="resources.html">RESOURCES</a></li>
+      <li><a href="login.html">LOGIN</a></li>
+    </ul>
+  </div>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Adaptive Learning Platform</h1>
+      <div class="buttons">
+        <button class="btn btn-purple"><a href="fetures.html" style="color:white"/>VIEW FEATURES</a></button>
+        <button class="btn btn-orange"><a href="solutions.html" style="color:white"/>VIEW SOLUTIONS</button>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>

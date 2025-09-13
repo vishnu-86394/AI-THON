@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login - Quiklrn</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f4f4f9;
+      color: #333;
+    }
+
+    /* Navbar */
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 40px;
+      background: #4a148c;
+      color: white;
+    }
+    .navbar .logo {
+      font-size: 28px;
+      font-weight: bold;
+    }
+    .navbar .logo span {
+      color: #6c63ff;
+    }
+    .navbar .logo strong {
+      color: orange;
+    }
+    .navbar ul {
+      list-style: none;
+      display: flex;
+      margin: 0;
+      padding: 0;
+    }
+    .navbar ul li {
+      margin-left: 20px;
+    }
+    .navbar ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    /* Login Form */
+    .login-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 80vh;
+    }
+    .login-box {
+      background: white;
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+      width: 350px;
+      text-align: center;
+    }
+    .login-box h2 {
+      margin-bottom: 20px;
+      color: #4a148c;
+    }
+    .login-box input[type="email"],
+    .login-box input[type="password"] {
+      width: 100%;
+      padding: 12px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 15px;
+    }
+    .login-box .options {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 14px;
+      margin: 10px 0;
+    }
+    .login-box .options a {
+      color: #6c63ff;
+      text-decoration: none;
+    }
+    .login-box button {
+      width: 100%;
+      padding: 12px;
+      background: orange;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      font-weight: bold;
+      color: white;
+      cursor: pointer;
+      margin-top: 15px;
+    }
+    .login-box button:hover {
+      background: darkorange;
+    }
+    .signup-link {
+      margin-top: 15px;
+      font-size: 14px;
+    }
+    .signup-link a {
+      color: #6c63ff;
+      text-decoration: none;
+    }
+
+    /* Footer */
+    footer {
+      background: #333;
+      color: white;
+      text-align: center;
+      padding: 15px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <div class="navbar">
+    <div class="logo"><span>Qui</span><strong>klrn</strong></div>
+    <ul>
+      <li><a href="Home.html">HOME</a></li>
+      <li><a href="institute.html">INSTITUTES</a></li>
+      <li><a href="enterprice.html">ENTERPRISE</a></li>
+      <li><a href="content.html">CONTENT PARTNERS</a></li>
+      <li><a href="learner.html">LEARNER</a></li>
+      
+      <li><a href="resources.html">RESOURCES</a></li>
+      <li><a href="login.html">LOGIN</a></li>
+    </ul>
+  </div>
+
+  <!-- Login Section -->
+  <div class="login-container">
+    <div class="login-box">
+      <h2>Login</h2>
+      <form>
+        <input type="email" placeholder="Email" required>
+        <input type="password" placeholder="Password" required>
+        <div class="options">
+          <label><input type="checkbox"> Remember me</label>
+          <a href="#">Forgot password?</a>
+        </div>
+        <button type="submit">Login</button>
+      </form>
+      <div class="signup-link">
+        Don't have an account? <a href="#">Sign up</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Quiklrn. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
